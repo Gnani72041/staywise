@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-danger shadow-lg p-2">
+  <div class="container-fluid">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand">
+      <img height="40" src="https://tse3.mm.bing.net/th/id/OIP.n7zmClr_E91G55Xzi9UBzwHaHa?pid=Api&P=0&h=180" alt="Logo">
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <!-- Search + Login/Register to right -->
+      <form class="d-flex align-items-center me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light me-2" type="submit">Search</button>
+      </form>
+
+      <!-- Only Login/Register -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'login_page' %}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'register' %}">Register</a>
+        </li>
+      </ul>
+      <a class="btn btn-danger" href="{% url 'logout_view' %}">Logout</a>
+    </div>
+  </div>
+</nav>

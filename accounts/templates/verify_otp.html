@@ -1,0 +1,40 @@
+{% extends "utils/base.html" %}
+
+{% block start %}
+<div class="container mt-5 pt-5 pb-5">
+  <div class="col-6 mx-auto card shadow p-4" style="border:none">
+    <form method="POST">
+      {% include "utils/alerts.html" %}
+      {% csrf_token %}
+
+
+
+      <!-- ✅ OTP input -->
+      <div class="mb-3">
+        <label for="otp" class="form-label">OTP</label>
+        <input type="text" name="otp" class="form-control" required>
+      </div>
+
+      <!-- ✅ Submit form -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <!-- ✅ Send OTP button -->
+      <button type="button" class="btn btn-secondary mt-2" onclick="sendOtp()">Send OTP</button>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ JavaScript block (place at bottom) -->
+<script>
+  function sendOtp() {
+    const email = document.getElementById('email').value;
+    if (email === "") {
+      alert("Please enter your email address");
+      return;
+    }
+
+    // ✅ Redirect with dynamic email
+    window.location.href = `/accounts/send_otp/${encodeURIComponent(email)}/`;
+  }
+</script>
+{% endblock %}
