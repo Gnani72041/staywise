@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Django stuff
+*.log
+db.sqlite3
+media/
+local_settings.py
+
+# Virtual environment
+venv/
+ENV/
+env/
+*.env
+
+# IDE & editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Static & build cache
+staticfiles/
+static_cdn/
+*.collectstatic
+*.egg-info/
+*.pot
+
+# Compiled translations
+*.mo
+
+# MySQL dumps
+*.sql
+*.sql.gz
