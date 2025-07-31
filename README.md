@@ -17,7 +17,6 @@ A Django-based hotel booking application inspired by OYO. StayWise provides a se
 - **Backend:** Django 4.x
 - **Frontend:** HTML, CSS, Bootstrap
 - **Database:** MariaDB/MySQL
-- **Hosting (optional):** Railway/Render/Heroku
 - **Authentication:** Django’s built-in authentication system
 
 ---
@@ -45,38 +44,3 @@ python manage.py createsuperuser
 
 # 6️⃣ Run Server
 python manage.py runserver
-
-
-
-## 📸 Screenshots
-
-<!-- All screenshots are in screenshots/ folder in the same directory as README.md -->
-
-### 🏠 Home Page
-<!-- This will load screenshots/home.png -->
-![Home](screenshots/home.png)
-
-### 🔑 Login (User)
-<!-- This will load screenshots/login.png -->
-![Login](screenshots/login.png)
-
-### 📝 Register (User)
-<!-- This will load screenshots/register.png -->
-![Register](screenshots/register.png)
-
-### 🏨 Booking Page
-<!-- This will load screenshots/booking.png -->
-![Booking](screenshots/booking.png)
-
-### ✅ Booking Success
-<!-- This will load screenshots/booking_success.png -->
-![Booking Success](screenshots/booking_success.png)
-
-### 🔑 Login (Vendor)
-<!-- This will load screenshots/login_vendor.png -->
-![Vendor Login](screenshots/login_vendor.png)
-
-### 📝 Register (Vendor)
-<!-- This will load screenshots/register_vendor.png -->
-![Vendor Register](screenshots/register_vendor.png)
-
