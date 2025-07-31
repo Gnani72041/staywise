@@ -50,25 +50,33 @@ python manage.py runserver
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home](oyo/screenshots/home.png)
+<!-- All screenshots are in screenshots/ folder in the same directory as README.md -->
 
+### 🏠 Home Page
+<!-- This will load screenshots/home.png -->
+![Home](screenshots/home.png)
 
 ### 🔑 Login (User)
-![Login](oyo/screenshots/login.png)
+<!-- This will load screenshots/login.png -->
+![Login](screenshots/login.png)
 
 ### 📝 Register (User)
-![Register](oyo/screenshots/register.png)
+<!-- This will load screenshots/register.png -->
+![Register](screenshots/register.png)
 
 ### 🏨 Booking Page
-![Booking](oyo/screenshots/booking.png)
+<!-- This will load screenshots/booking.png -->
+![Booking](screenshots/booking.png)
 
 ### ✅ Booking Success
-![Booking Success](oyo/screenshots/booking_success.png)
+<!-- This will load screenshots/booking_success.png -->
+![Booking Success](screenshots/booking_success.png)
 
 ### 🔑 Login (Vendor)
-![Vendor Login](oyo/screenshots/login_vendor.png)
+<!-- This will load screenshots/login_vendor.png -->
+![Vendor Login](screenshots/login_vendor.png)
 
 ### 📝 Register (Vendor)
-![Vendor Register](oyo/screenshots/register_vendor.png)
+<!-- This will load screenshots/register_vendor.png -->
+![Vendor Register](screenshots/register_vendor.png)
 
