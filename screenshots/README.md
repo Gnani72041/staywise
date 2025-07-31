@@ -45,3 +45,29 @@ python manage.py createsuperuser
 
 # 6️⃣ Run Server
 python manage.py runserver
+
+
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/home.png)
+
+### 🔑 Login (User)
+![Login](screenshots/login.png)
+
+### 📝 Register (User)
+![Register](screenshots/register.png)
+
+### 🏨 Booking Page
+![Booking](screenshots/booking.png)
+
+### ✅ Booking Success
+![Booking Success](screenshots/booking_success.png)
+
+### 🔑 Login (Vendor)
+![Vendor Login](screenshots/login_vendor.png)
+
+### 📝 Register (Vendor)
+![Vendor Register](screenshots/register_vendor.png)
+
