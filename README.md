@@ -49,7 +49,4 @@ python manage.py createsuperuser
 
 ---
 
-## 📸 Screenshots
-
-![Image Alt](https://github.com/Gnani72041/staywise/blob/0b27ebd93abcef2d37bc28beb3faa7a96783c8be/Screenshot%202025-07-23%20200118.png)
 
