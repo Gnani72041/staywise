@@ -65,6 +65,3 @@ python manage.py runserver
 <p align="center">
   <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/booking_success.png?raw=true" width="250">
 </p>
-
-
-
