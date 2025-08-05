@@ -47,21 +47,21 @@ python manage.py runserver
 
 
 
-
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/home.png?raw=true" width="250">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/login.png?raw=true" width="250">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/login_vendor.png?raw=true" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/home.png" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login.png" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login_vendor.png" width="250">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/register.png?raw=true" width="250">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/register_vendor.png?raw=true" width="250">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/booking.png?raw=true" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register.png" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register_vendor.png" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking.png" width="250">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Gnani72041/staywise/blob/main/screenshots/booking_success.png?raw=true" width="250">
+  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking_success.png" width="250">
 </p>
+
