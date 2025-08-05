@@ -14,10 +14,10 @@ A Django-based hotel booking application inspired by OYO. StayWise provides a se
 ---
 
 ## 🛠️ Tech Stack
-- **Backend:** Django 4.x
-- **Frontend:** HTML, CSS, Bootstrap
-- **Database:** MariaDB/MySQL
-- **Authentication:** Django’s built-in authentication system
+- **Backend:** Django 4.x  
+- **Frontend:** HTML, CSS, Bootstrap  
+- **Database:** MariaDB/MySQL  
+- **Authentication:** Django’s built-in authentication system  
 
 ---
 
@@ -44,24 +44,3 @@ python manage.py createsuperuser
 
 # 6️⃣ Run Server
 python manage.py runserver
-
-
-
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/home.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login_vendor.png" width="250">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register_vendor.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking.png" width="250">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking_success.png" width="250">
-</p>
-
