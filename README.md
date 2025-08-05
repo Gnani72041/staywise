@@ -51,5 +51,5 @@ python manage.py createsuperuser
 
 ## 📸 Screenshots
 
-![Image Alt](https://github.com/Gnani72041/staywise/tree/88a1141e379eedc8a6d5c785a8bb4e58896a2be5/public/static/screenshots)
+![Image Alt](https://github.com/Gnani72041/staywise/blob/0b27ebd93abcef2d37bc28beb3faa7a96783c8be/Screenshot%202025-07-23%20200118.png)
 
