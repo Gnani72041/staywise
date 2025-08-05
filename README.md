@@ -51,20 +51,5 @@ python manage.py createsuperuser
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/home.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/login_vendor.png" width="250">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/register_vendor.png" width="250">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking.png" width="250">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking_success.png" width="250">
-</p>
-
+![Image Alt](https://github.com/Gnani72041/staywise/tree/88a1141e379eedc8a6d5c785a8bb4e58896a2be5/public/static/screenshots)
 
