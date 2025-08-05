@@ -42,10 +42,8 @@ python manage.py migrate
 # 5️⃣ Create Superuser (Admin Panel)
 python manage.py createsuperuser
 
-# 6️⃣ Run Server
-python manage.py runserver
-<<<<<<< HEAD
-=======
+
+
 
 
 
@@ -68,4 +66,5 @@ python manage.py runserver
 <p align="center">
   <img src="https://raw.githubusercontent.com/Gnani72041/staywise/main/public/static/screenshots/booking_success.png" width="250">
 </p>
+
 
