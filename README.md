@@ -50,16 +50,21 @@ python manage.py runserver
 
 ## 📸 Screenshots
 
-| Home Page | Login Page (User) | Login Page (Vendor) |
-|-----------|-------------------|---------------------|
-| ![Home Page](screenshots/home.png) | ![Login](screenshots/login.png) | ![Vendor Login](screenshots/login_vendor.png) |
+<p align="center">
+  <img src="screenshots/home.png" width="250">
+  <img src="screenshots/login.png" width="250">
+  <img src="screenshots/login_vendor.png" width="250">
+</p>
 
-| Register Page (User) | Register Page (Vendor) | Booking Page |
-|----------------------|------------------------|--------------|
-| ![Register](screenshots/register.png) | ![Vendor Register](screenshots/register_vendor.png) | ![Booking](screenshots/booking.png) |
+<p align="center">
+  <img src="screenshots/register.png" width="250">
+  <img src="screenshots/register_vendor.png" width="250">
+  <img src="screenshots/booking.png" width="250">
+</p>
 
-| Booking Success |
-|-----------------|
-| ![Booking Success](screenshots/booking_success.png) |
+<p align="center">
+  <img src="screenshots/booking_success.png" width="250">
+</p>
+
 
 
