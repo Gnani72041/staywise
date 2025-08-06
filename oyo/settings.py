@@ -85,13 +85,14 @@ WSGI_APPLICATION = 'oyo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oyo',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'NAME': 'Gnaneshm65$oyo',  # Your database name
+        'USER': 'Gnaneshm65',       # Username from PythonAnywhere
+        'PASSWORD': 'Gnani@1432',  # The MySQL password you set
+        'HOST': 'Gnaneshm65.mysql.pythonanywhere-services.com',  
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
