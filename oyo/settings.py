@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%8^j_n*e81pr-@8w76%m(sotp!n%i45*-oa*irp#$%!2jkf7xp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['gnaneshm65.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'oyo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Gnaneshm65$oyo',  # Your database name
-        'USER': 'Gnaneshm65',       # Username from PythonAnywhere
-        'PASSWORD': 'Gnani@1432',  # The MySQL password you set
-        'HOST': 'Gnaneshm65.mysql.pythonanywhere-services.com',  
-        'PORT': '3306',
+        'NAME': 'oyo',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
@@ -147,9 +147,11 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #settings.py
+
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com' 
 EMAIL_USE_TLS = True 
 EMAIL_PORT = 587 
 EMAIL_HOST_USER = "gnaneshm65@gmail.com" 
-EMAIL_HOST_PASSWORD ="btlg azwn bmbd uzsm"
+EMAIL_HOST_PASSWORD ="pwko brwz yfeq qhhi"

@@ -2,60 +2,149 @@
 
 {% block start %}
 <div class="container mt-5 pt-5 pb-5">
-  <!-- Search Form -->
-  <div class="col-6 mx-auto">
-    <form class="d-flex">
-      <input type="text" name="search" class="form-control" placeholder="Search">
-      <select class="form-control" name="sort_by">
-        <option value="">Choose</option>
-        <option value="sort_low">Sort by Low to High</option>
-        <option value="sort_high">Sort by High to Low</option>
-      </select>
-      <button type="submit" class="btn btn-warning mt-1">Search</button>
+  <!-- Improved Search Form -->
+  <div class="col-12 col-md-8 col-lg-6 mx-auto mb-5">
+    <form class="row g-2">
+      <div class="col-md-6">
+        <input type="text" name="search" class="form-control form-control-lg" placeholder="Search hotels...">
+      </div>
+      <div class="col-md-4">
+        <select class="form-select form-select-lg" name="sort_by">
+          <option value="">Sort by</option>
+          <option value="sort_low">Price: Low to High</option>
+          <option value="sort_high">Price: High to Low</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-warning btn-lg w-100">Search</button>
+      </div>
     </form>
   </div>
 
-  <!-- Hotel Cards -->
-  <div class="row">
+  <!-- Enhanced Hotel Cards -->
+  <div class="row g-4">
     {% for hotel in hotels %}
-      <div class="col-md-3 mt-3">
-        <div class="card shadow" style="width: 18rem;">
-          <a href="{% url 'hotel_details' hotel.hotel_slug %}">
-
-          <!-- Hotel Images -->
-          {% if hotel.hotel_images.all|length > 0 %}
-            <div class="d-flex flex-wrap" style="gap: 2px;">
-              {% for image in hotel.hotel_images.all|slice:":4" %}
-                <img src="/media/{{ image.image }}" 
-                     class="mb-1" 
-                     style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;" 
-                     alt="Hotel Image">
-              {% endfor %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm overflow-hidden hover-shadow transition-all">
+          <a href="{% url 'hotel_details' hotel.hotel_slug %}" class="text-decoration-none text-dark">
+            <!-- Hotel Images Gallery -->
+            <div class="position-relative">
+              {% if hotel.hotel_images.all|length > 0 %}
+                <div class="hotel-image-gallery">
+                  <div class="main-image">
+                    <img src="/media/{{ hotel.hotel_images.first.image }}" 
+                         class="img-fluid w-100" 
+                         style="height: 200px; object-fit: cover;" 
+                         alt="{{ hotel.hotel_name }}">
+                  </div>
+                  {% if hotel.hotel_images.all|length > 1 %}
+                  <div class="thumbnail-grid">
+                    {% for image in hotel.hotel_images.all|slice:"1:4" %}
+                      <img src="/media/{{ image.image }}" 
+                           class="thumbnail-img" 
+                           alt="Hotel thumbnail">
+                    {% endfor %}
+                    {% if hotel.hotel_images.all|length > 4 %}
+                      <div class="thumbnail-more">+{{ hotel.hotel_images.all|length|add:"-4" }}</div>
+                    {% endif %}
+                  </div>
+                  {% endif %}
+                </div>
+              {% else %}
+                <img src="https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" 
+                     class="img-fluid w-100" 
+                     style="height: 200px; object-fit: cover;" 
+                     alt="Default hotel image">
+              {% endif %}
+              <div class="position-absolute top-0 end-0 m-2">
+                <span class="badge bg-success bg-opacity-90 text-white">{{ hotel.hotel_offer_price|floatformat:0 }} (Offer)</span>
+              </div>
             </div>
-          {% else %}
-            <img src="https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" 
-                 style="height: 200px; width: 100%; object-fit: cover; border-radius: 5px;" 
-                 alt="Default Image">
-          {% endif %}
 
-          <!-- Card Body -->
-          <div class="card-body">
-            <h5 class="card-title">{{ hotel.hotel_name }}</h5>
-            <small>{{ hotel.hotel_owner.phone_number }}</small>
-            <br><br>
-            Price <span class="badge text-bg-danger">{{ hotel.hotel_price }}</span>
-            Offer Price <span class="badge text-bg-success">{{ hotel.hotel_offer_price }}</span>
-            <hr>
-            <p>{{ hotel.hotel_location }}</p>
-            {% for amenity in hotel.ameneties.all %}
-              <span class="badge text-bg-primary">{{ amenity.name }}</span>
-            {% endfor %}
-          </div>
-
+            <!-- Card Body -->
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-2">{{ hotel.hotel_name }}</h5>
+              <p class="text-muted small mb-2">
+                <i class="bi bi-geo-alt-fill text-primary"></i> {{ hotel.hotel_location }}
+              </p>
+              
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="text-decoration-line-through text-muted me-2">₹{{ hotel.hotel_price|floatformat:0 }}</span>
+                  <span class="fw-bold text-danger">₹{{ hotel.hotel_offer_price|floatformat:0 }}</span>
+                </div>
+                <small class="text-muted">
+                  <i class="bi bi-telephone"></i> {{ hotel.hotel_owner.phone_number }}
+                </small>
+              </div>
+              
+              <!-- Amenities -->
+              <div class="amenities-scroll mb-2">
+                {% for amenity in hotel.ameneties.all %}
+                  <span class="badge bg-light text-dark me-1 mb-1">{{ amenity.name }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            
+            <!-- View Button -->
+            <div class="card-footer bg-white border-0 pt-0">
+              <button class="btn btn-outline-primary w-100">View Details</button>
+            </div>
           </a>
         </div>
       </div>
     {% endfor %}
   </div>
 </div>
+
+<style>
+  .hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+  .hotel-image-gallery {
+    position: relative;
+  }
+  .main-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  .thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding: 2px;
+    background: rgba(255,255,255,0.8);
+  }
+  .thumbnail-img {
+    height: 40px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+  .thumbnail-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 0.8rem;
+  }
+  .amenities-scroll {
+    max-height: 60px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  /* Custom scrollbar */
+  .amenities-scroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  .amenities-scroll::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+  }
+</style>
 {% endblock %}
